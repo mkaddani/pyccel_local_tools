@@ -4,5 +4,5 @@ if [ $# -ne 1 ];
 	exit 1;
 fi
 echo pyccel Directory to be tested: $1
-
+docker build -t pyccel_ubuntu . 
 docker container run --rm -v $1:/home/pyccel -it pyccel_ubuntu bash
