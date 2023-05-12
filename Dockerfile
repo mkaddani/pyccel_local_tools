@@ -14,10 +14,10 @@ RUN  apt-get install -y python3.9 python3-pip
 # copying the pyccel project to be tested
 
 #ARG PYCCEL_PATH
-COPY ./pyccel /home/pyccel
+#COPY ./pyccel /home/pyccel
 
-WORKDIR /home/pyccel
-RUN  bash -c 'pip3 install --user -e .[test]'
-RUN  bash -c ./tests/run_tests_py3.sh
+#WORKDIR /home/pyccel
+#RUN  bash -c 'pip3 install --user -e .[test]'
+#RUN  bash -c ./tests/run_tests_py3.sh
 
 
